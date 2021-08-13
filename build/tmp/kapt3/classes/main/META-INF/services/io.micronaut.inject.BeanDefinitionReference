@@ -1,6 +1,9 @@
 br.com.zup.autores.$DeletaAutorControllerDefinitionClass
 br.com.zup.autores.$BuscaAutoresControllerDefinitionClass
 br.com.zup.autores.$$CadastraAutorControllerDefinition$InterceptedDefinitionClass
+br.com.zup.autores.$$AtualizaAutorControllerDefinition$InterceptedDefinitionClass
 br.com.zup.autores.$AutorRepository$InterceptedDefinitionClass
 br.com.zup.autores.$CadastraAutorControllerDefinitionClass
 br.com.zup.autores.$AtualizaAutorControllerDefinitionClass
+br.com.zup.autores.$$DeletaAutorControllerDefinition$InterceptedDefinitionClass
+br.com.zup.autores.$$BuscaAutoresControllerDefinition$InterceptedDefinitionClass

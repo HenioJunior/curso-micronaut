@@ -8,6 +8,7 @@ import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Post
 import io.micronaut.http.uri.UriBuilder
 import io.micronaut.validation.Validated
+import javax.transaction.Transactional
 
 
 import javax.validation.Valid
@@ -17,6 +18,7 @@ import javax.validation.Valid
 class CadastraAutorController(val autorRepository: AutorRepository) {
 
     @Post
+    @Transactional
     fun cadastra(@Body @Valid request: NovoAutorRequest) : HttpResponse<Any> {
         println("Request => ${request}")
 
