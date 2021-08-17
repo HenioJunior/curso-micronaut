@@ -27,6 +27,7 @@ class CadastraAutorController(val autorRepository: AutorRepository,
         val autor = request.paraAutor(enderecoResponse.body()!!)
 
         println("Autor => ${autor.nome}")
+
         autorRepository.save(autor)
 
         val uri = UriBuilder.of("/autores/{id}")

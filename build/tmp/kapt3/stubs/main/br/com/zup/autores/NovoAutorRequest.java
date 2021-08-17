@@ -10,6 +10,7 @@ public final class NovoAutorRequest {
     private final java.lang.String nome = null;
     @org.jetbrains.annotations.NotNull()
     @javax.validation.constraints.Email()
+    @javax.validation.constraints.NotBlank()
     private final java.lang.String email = null;
     @org.jetbrains.annotations.NotNull()
     @javax.validation.constraints.Size(max = 400)

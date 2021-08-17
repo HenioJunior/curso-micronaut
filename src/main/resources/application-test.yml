@@ -1,0 +1,7 @@
+datasources:
+  default:
+    url: jdbc:he:mem:testdb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE
+    driverClassName: org.h2.Driver
+logger:
+   levels:
+     io.micronaut.transactional: DEBUG
