@@ -24,9 +24,9 @@ internal class BuscaAutoresControllerTest {
 
     @BeforeEach
     internal fun setup() {
-        val enderecoResponse = EnderecoResponse("Rua das Acácias2", "Leonor2", "Londrina2")
-        val endereco = Endereco(enderecoResponse, "86071-281","12")
-        autor = Autor("Bob Green2", "bob2.green@zup.com.br", "Teste post casa do código2", endereco)
+        val enderecoResponse = EnderecoResponse("Rua das Acácias", "Leonor", "Londrina")
+        val endereco = Endereco(enderecoResponse, "86071-280","12")
+        autor = Autor("Bob Green", "bob.green@zup.com.br", "Teste post casa do código", endereco)
 
         autorRepository.save(autor)
     }
@@ -37,7 +37,7 @@ internal class BuscaAutoresControllerTest {
     }
 
     @Test
-    internal fun deveRetornarOsDadosDeUmAutor() {
+    fun deveRetornarOsDadosDeUmAutor() {
         //por padrão o client do Micronaut é reativo
         val response = client.toBlocking().exchange("/autores?email=${autor.email}", DetalhesDoAutorResponse::class.java)
 

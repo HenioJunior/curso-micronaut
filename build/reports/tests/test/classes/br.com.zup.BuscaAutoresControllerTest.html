@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.047s</div>
+<div class="counter">1.182s</div>
 <p>duration</p>
 </div>
 </td>
@@ -73,11 +73,11 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="deveRetornarOsDadosDeUmAutor$nossa_casa_do_codigo()"></a>
-<h3 class="failures">deveRetornarOsDadosDeUmAutor$nossa_casa_do_codigo()</h3>
+<a name="deveRetornarOsDadosDeUmAutor()"></a>
+<h3 class="failures">deveRetornarOsDadosDeUmAutor()</h3>
 <span class="code">
 <pre>io.micronaut.http.client.exceptions.HttpClientResponseException: Error decoding HTTP response body: Error decoding stream for type [class br.com.zup.autores.DetalhesDoAutorResponse]: Missing required creator property 'endereco' (index 3)
- at [Source: (byte[])&quot;{&quot;nome&quot;:&quot;Bob Green2&quot;,&quot;email&quot;:&quot;bob2.green@zup.com.br&quot;,&quot;descricao&quot;:&quot;Teste post casa do código2&quot;}&quot;; line: 1, column: 95]
+ at [Source: (byte[])&quot;{&quot;nome&quot;:&quot;Bob Green&quot;,&quot;email&quot;:&quot;bob.green@zup.com.br&quot;,&quot;descricao&quot;:&quot;Teste post casa do código&quot;}&quot;; line: 1, column: 92]
 	at io.micronaut.http.client.netty.DefaultHttpClient$11.channelReadInstrumented(DefaultHttpClient.java:2191)
 	at io.micronaut.http.client.netty.DefaultHttpClient$11.channelReadInstrumented(DefaultHttpClient.java:2061)
 	at io.micronaut.http.client.netty.DefaultHttpClient$SimpleChannelInboundHandlerInstrumented.channelRead0(DefaultHttpClient.java:2765)
@@ -123,7 +123,7 @@
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 Caused by: io.micronaut.http.codec.CodecException: Error decoding stream for type [class br.com.zup.autores.DetalhesDoAutorResponse]: Missing required creator property 'endereco' (index 3)
- at [Source: (byte[])&quot;{&quot;nome&quot;:&quot;Bob Green2&quot;,&quot;email&quot;:&quot;bob2.green@zup.com.br&quot;,&quot;descricao&quot;:&quot;Teste post casa do código2&quot;}&quot;; line: 1, column: 95]
+ at [Source: (byte[])&quot;{&quot;nome&quot;:&quot;Bob Green&quot;,&quot;email&quot;:&quot;bob.green@zup.com.br&quot;,&quot;descricao&quot;:&quot;Teste post casa do código&quot;}&quot;; line: 1, column: 92]
 	at io.micronaut.jackson.codec.JacksonMediaTypeCodec.decode(JacksonMediaTypeCodec.java:209)
 	at io.micronaut.http.client.netty.FullNettyClientHttpResponse.convertByteBuf(FullNettyClientHttpResponse.java:280)
 	at io.micronaut.http.client.netty.FullNettyClientHttpResponse.lambda$getBody$1(FullNettyClientHttpResponse.java:218)
@@ -133,7 +133,7 @@ Caused by: io.micronaut.http.codec.CodecException: Error decoding stream for typ
 	at io.micronaut.http.client.netty.DefaultHttpClient$11.channelReadInstrumented(DefaultHttpClient.java:2121)
 	... 43 more
 Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Missing required creator property 'endereco' (index 3)
- at [Source: (byte[])&quot;{&quot;nome&quot;:&quot;Bob Green2&quot;,&quot;email&quot;:&quot;bob2.green@zup.com.br&quot;,&quot;descricao&quot;:&quot;Teste post casa do código2&quot;}&quot;; line: 1, column: 95]
+ at [Source: (byte[])&quot;{&quot;nome&quot;:&quot;Bob Green&quot;,&quot;email&quot;:&quot;bob.green@zup.com.br&quot;,&quot;descricao&quot;:&quot;Teste post casa do código&quot;}&quot;; line: 1, column: 92]
 	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
 	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1615)
 	at com.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer._findMissing(PropertyValueBuffer.java:194)
@@ -168,8 +168,8 @@ Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Missing 
 </tr>
 </thead>
 <tr>
-<td class="failures">deveRetornarOsDadosDeUmAutor$nossa_casa_do_codigo()</td>
-<td class="failures">1.047s</td>
+<td class="failures">deveRetornarOsDadosDeUmAutor()</td>
+<td class="failures">1.182s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -177,14 +177,15 @@ Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Missing 
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>?[36m07:06:52.769?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
-?[36m07:06:53.564?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Starting...
-?[36m07:06:53.781?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Start completed.
-?[36m07:06:53.796?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.Version?[0;39m - HHH000412: Hibernate ORM core version 5.4.24.Final
-?[36m07:06:53.912?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.h.annotations.common.Version?[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-?[36m07:06:54.053?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.dialect.Dialect?[0;39m - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-?[36m07:06:56.108?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown initiated...
-?[36m07:06:56.124?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown completed.
+<pre>?[36m09:48:31.893?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
+?[36m09:48:32.742?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Starting...
+?[36m09:48:32.889?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Start completed.
+?[36m09:48:32.915?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.Version?[0;39m - HHH000412: Hibernate ORM core version 5.4.24.Final
+?[36m09:48:33.050?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.h.annotations.common.Version?[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+?[36m09:48:33.167?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.dialect.Dialect?[0;39m - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+?[36m09:48:33.739?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.l.PropertiesLoggingLevelsConfigurer?[0;39m - Setting log level 'DEBUG' for logger: 'io.micronaut.transactional'
+?[36m09:48:35.307?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown initiated...
+?[36m09:48:35.312?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown completed.
 </pre>
 </span>
 </div>
@@ -196,7 +197,7 @@ Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Missing 
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.0</a> at Aug 17, 2021, 7:06:56 AM</p>
+<a href="http://www.gradle.org">Gradle 7.0</a> at Aug 17, 2021, 9:48:35 AM</p>
 </div>
 </div>
 </body>
